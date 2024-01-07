@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="character-list">
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Date of Birth</th>
+                <th>Power Level</th>
+                <th>Rating</th>
+                <th>Rarity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for character in characters %}
+                <tr>
+                    <td><img src="{{ character.image }}" style="width: 100px; height: 150px;"></td>
+                    <td>{{ character.name }}</td>
+                    <td>{{ character.description }}</td>
+                    <td>{{ character.date_of_birth }}</td>
+                    <td>{{ character.power_level }}</td>
+                    <td>{{ character.rating }}</td>
+                    <td>{{ character.rarity }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

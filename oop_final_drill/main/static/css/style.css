@@ -1,0 +1,227 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fcf8f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e84c22;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #e84c22;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Village List styles */
+.village-list li,
+.character-list li,
+.jutsu-list li {
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Village List styles */
+.village-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.village-list th,
+.village-list td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.village-list th {
+    background-color: #333;
+    color: #fff;
+}
+
+.village-list tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* Character List styles */
+.character-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.character-list th,
+.character-list td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.character-list th {
+    background-color: #333;
+    color: #fff;
+}
+
+.character-list tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* Jutsu List styles */
+.jutsu-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.jutsu-list th,
+.jutsu-list td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.jutsu-list th {
+    background-color: #333;
+    color: #fff;
+}
+
+.jutsu-list tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.page-item {
+    margin-right: 5px;
+}
+
+.page-link {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    color: #007bff;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.page-item.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #ddd;
+    border-color: #ddd;
+}
+
+.page-item.active {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    z-index: 3;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+/* Center text in the footer */
+footer p {
+    margin: 0;
+}
+
+/* Add some spacing between the text and social icons */
+.footer-icons {
+    margin-top: 10px;
+}
+
+/* Style the social icons */
+.footer-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #e84c22; /* Naruto Orange */
+}
